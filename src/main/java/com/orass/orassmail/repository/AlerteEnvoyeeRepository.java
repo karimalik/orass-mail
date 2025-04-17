@@ -1,6 +1,6 @@
-package com.orass.repository;
+package com.orass.orassmail.repository;
 
-import com.orass.model.AlerteEnvoyee;
+import com.orass.orassmail.model.AlerteEnvoyee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

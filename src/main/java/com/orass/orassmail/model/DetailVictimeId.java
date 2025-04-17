@@ -1,4 +1,4 @@
-package com.orass.model;
+package com.orass.orassmail.model;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.orass.service;
+package com.orass.orassmail.service;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,7 +16,7 @@ import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-import com.orass.model.DetailVictime;
+import com.orass.orassmail.model.DetailVictime;
 
 @Service
 @Slf4j
@@ -39,7 +39,7 @@ public class EmailService {
         }
     }
 
-    public boolean sendVictimeAlerte(DetailVictime victime) {
+    public boolean sendVictimeAlert(DetailVictime victime) {
         try {
             MimeMessage mimeMessage = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
@@ -102,6 +102,48 @@ public class EmailService {
             log.error("Erreur lors de l'envoi de l'email d'alerte pour le sinistre {}/{}/{}, victime {} : {}",
                     victime.getCodeInte(), victime.getExerSini(), victime.getNumeSini(), victime.getNumeTier(),
                     e.getMessage());
+            return false;
+        }
+    }
+
+    public boolean sendSummaryAlert(String to, int totalAlerts, String detailContent) {
+        try {
+            MimeMessage mimeMessage = mailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
+            
+            helper.setTo(to);
+            helper.setSubject("ORASS - Résumé des alertes sinistres du jour");
+            
+            String content = 
+                    "<html>" +
+                    "<head>" +
+                    "    <style>" +
+                    "        body { font-family: Arial, sans-serif; }" +
+                    "        .container { padding: 20px; }" +
+                    "        .header { background-color: #4a7ba7; color: white; padding: 10px; }" +
+                    "        .summary { font-size: 16px; margin: 20px 0; }" +
+                    "    </style>" +
+                    "</head>" +
+                    "<body>" +
+                    "    <div class='container'>" +
+                    "        <div class='header'>" +
+                    "            <h2>Résumé des alertes sinistres du jour</h2>" +
+                    "        </div>" +
+                    "        <p>Bonjour,</p>" +
+                    "        <p class='summary'>Aujourd'hui, <strong>" + totalAlerts + " alertes</strong> ont été envoyées concernant des dossiers sinistres en attente.</p>" +
+                    "        <h3>Détail par gestionnaire :</h3>" +
+                    "        " + detailContent +
+                    "        <p>Cordialement,<br>Système d'alertes ORASS</p>" +
+                    "    </div>" +
+                    "</body>" +
+                    "</html>";
+            
+            helper.setText(content, true);
+            mailSender.send(mimeMessage);
+            log.info("Email de résumé envoyé avec succès à : {}", to);
+            return true;
+        } catch (MessagingException e) {
+            log.error("Erreur lors de l'envoi de l'email de résumé à {} : {}", to, e.getMessage());
             return false;
         }
     }
