@@ -1,4 +1,4 @@
-package com.orass.model;
+package com.orass.orassmail.model;
 
 import lombok.Data;
 
@@ -19,46 +19,46 @@ public class DetailVictime {
     @Id
     @Column(name = "CODEINTE")
     private String codeInte;
-    
+
     @Id
     @Column(name = "EXERSINI")
     private String exerSini;
-    
+
     @Id
     @Column(name = "NUMESINI")
     private String numeSini;
-    
+
     @Id
     @Column(name = "NUMETIER")
     private String numeTier;
-    
+
     @Column(name = "DATESURV")
     private Date dateSurv;
-    
+
     @Column(name = "LIEUSINI")
     private String lieuSini;
-    
+
     @Column(name = "NOM_TIER")
     private String nomTier;
-    
+
     @Column(name = "LIBEVEGA")
     private String libeVega;
-    
+
     @Column(name = "RELIQUAT")
     private Double reliquat;
-    
+
     @Column(name = "DATE_EVA")
     private Date dateEva;
-    
+
     @Column(name = "NBR_JOUR")
     private Integer nbrJour;
-    
+
     @Column(name = "TELEPHONE")
     private String telephone;
-    
+
     @Column(name = "CREE_PAR")
     private String creePar;
-    
+
     @Column(name = "EMAIL")
     private String email;
 }

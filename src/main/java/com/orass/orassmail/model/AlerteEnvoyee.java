@@ -1,4 +1,4 @@
-package com.orass.model;
+package com.orass.orassmail.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,28 +22,28 @@ public class AlerteEnvoyee {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "alerte_seq")
     @SequenceGenerator(name = "alerte_seq", sequenceName = "SEQ_ALERTE", allocationSize = 1)
     private Long id;
-    
+
     @Column(name = "CODE_INTE")
     private String codeInte;
-    
+
     @Column(name = "EXER_SINI")
     private String exerSini;
-    
+
     @Column(name = "NUME_SINI")
     private String numeSini;
-    
+
     @Column(name = "NUME_TIER")
     private String numeTier;
-    
+
     @Column(name = "EMAIL_DESTINATAIRE")
     private String emailDestinataire;
-    
+
     @Column(name = "DATE_ENVOI")
     private Date dateEnvoi;
-    
+
     @Column(name = "TYPE_ALERTE")
     private String typeAlerte;
-    
+
     @Column(name = "STATUT_ENVOI")
     private String statutEnvoi;
 
