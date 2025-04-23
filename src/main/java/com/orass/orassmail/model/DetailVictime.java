@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.IdClass;
+import jakarta.persistence.Transient;
 
 // import java.io.Serializable;
 import java.util.Date;
@@ -59,6 +60,7 @@ public class DetailVictime {
     @Column(name = "CREE_PAR")
     private String creePar;
 
-    @Column(name = "EMAIL")
+    // @Column(name = "EMAIL")
+    @Transient
     private String email;
 }
