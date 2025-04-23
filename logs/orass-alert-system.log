@@ -1,0 +1,451 @@
+2025-04-23T13:44:35.285Z  INFO 30412 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : Starting OrassmailApplication using Java 17.0.14 with PID 30412 (E:\Projects\orassmail\target\classes started by ALIKSON.AWOUATSA in E:\Projects\orassmail)
+2025-04-23T13:44:35.291Z DEBUG 30412 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-23T13:44:35.293Z  INFO 30412 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-04-23T13:44:36.472Z  INFO 30412 --- [orassmail] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-23T13:44:36.770Z  INFO 30412 --- [orassmail] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 249 ms. Found 2 JPA repository interfaces.
+2025-04-23T13:44:37.568Z  INFO 30412 --- [orassmail] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-23T13:44:37.603Z  INFO 30412 --- [orassmail] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-23T13:44:37.605Z  INFO 30412 --- [orassmail] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-23T13:44:37.698Z  INFO 30412 --- [orassmail] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-23T13:44:37.700Z  INFO 30412 --- [orassmail] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2298 ms
+2025-04-23T13:44:37.847Z DEBUG 30412 --- [orassmail] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-04-23T13:44:37.877Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@6659c656
+2025-04-23T13:44:38.175Z  INFO 30412 --- [orassmail] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-23T13:44:38.299Z  INFO 30412 --- [orassmail] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-23T13:44:38.362Z  INFO 30412 --- [orassmail] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-23T13:44:39.137Z  INFO 30412 --- [orassmail] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-23T13:44:39.173Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2025-04-23T13:44:39.177Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2025-04-23T13:44:39.177Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2025-04-23T13:44:39.177Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2025-04-23T13:44:39.178Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2025-04-23T13:44:39.178Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery............."SELECT 1 FROM DUAL"
+2025-04-23T13:44:39.179Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............60000
+2025-04-23T13:44:39.179Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2025-04-23T13:44:39.180Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2025-04-23T13:44:39.180Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2025-04-23T13:44:39.181Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2025-04-23T13:44:39.181Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2025-04-23T13:44:39.181Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2025-04-23T13:44:39.181Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2025-04-23T13:44:39.181Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2025-04-23T13:44:39.182Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2025-04-23T13:44:39.182Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2025-04-23T13:44:39.182Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2025-04-23T13:44:39.182Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:oracle:thin:@//192.168.1.4:1521/SAARCIDB
+2025-04-23T13:44:39.183Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................0
+2025-04-23T13:44:39.183Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2025-04-23T13:44:39.183Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2025-04-23T13:44:39.183Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................20
+2025-04-23T13:44:39.183Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2025-04-23T13:44:39.185Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2025-04-23T13:44:39.185Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................5
+2025-04-23T13:44:39.186Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2025-04-23T13:44:39.187Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2025-04-23T13:44:39.188Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2025-04-23T13:44:39.189Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2025-04-23T13:44:39.190Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2025-04-23T13:44:39.190Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2025-04-23T13:44:39.190Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2025-04-23T13:44:39.191Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2025-04-23T13:44:39.191Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : username........................"ORASSSMS"
+2025-04-23T13:44:39.191Z DEBUG 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............30000
+2025-04-23T13:44:39.191Z  INFO 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-23T13:44:39.727Z  INFO 30412 --- [orassmail] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2025-04-23T13:44:39.768Z  INFO 30412 --- [orassmail] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@18b3db6e
+2025-04-23T13:44:39.772Z  INFO 30412 --- [orassmail] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-23T13:44:39.818Z  WARN 30412 --- [orassmail] [main] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2025-04-23T13:44:39.826Z  WARN 30412 --- [orassmail] [main] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-23T13:44:39.880Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+2025-04-23T13:44:39.884Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+2025-04-23T13:44:39.889Z  INFO 30412 --- [orassmail] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-23T13:44:40.748Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@16a6970b
+2025-04-23T13:44:40.793Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=2, active=0, idle=2, waiting=0)
+2025-04-23T13:44:40.823Z  INFO 30412 --- [orassmail] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-23T13:44:40.831Z  INFO 30412 --- [orassmail] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T13:44:40.893Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@18617baf
+2025-04-23T13:44:40.934Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=3, active=0, idle=3, waiting=0)
+2025-04-23T13:44:41.145Z  INFO 30412 --- [orassmail] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-23T13:44:41.711Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1c5efc7b
+2025-04-23T13:44:41.742Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=4, active=0, idle=4, waiting=0)
+2025-04-23T13:44:42.237Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@595c7194
+2025-04-23T13:44:42.269Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:44:43.420Z DEBUG 30412 --- [orassmail] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2025-04-23T13:44:43.708Z DEBUG 30412 --- [orassmail] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-04-23T13:44:43.769Z DEBUG 30412 --- [orassmail] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-23T13:44:43.820Z DEBUG 30412 --- [orassmail] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-23T13:44:44.707Z  INFO 30412 --- [orassmail] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-23T13:44:44.913Z  INFO 30412 --- [orassmail] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-23T13:44:44.958Z  INFO 30412 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : Started OrassmailApplication in 10.327 seconds (process running for 10.682)
+2025-04-23T13:44:52.198Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-23T13:44:52.199Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-23T13:44:52.199Z DEBUG 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-04-23T13:44:52.200Z DEBUG 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-04-23T13:44:52.200Z DEBUG 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-04-23T13:44:52.201Z DEBUG 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@69503026
+2025-04-23T13:44:52.202Z DEBUG 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@341f2f4c
+2025-04-23T13:44:52.202Z DEBUG 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-04-23T13:44:52.202Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-04-23T13:44:52.226Z DEBUG 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/alertes/trigger", parameters={}
+2025-04-23T13:44:52.237Z DEBUG 30412 --- [orassmail] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.orass.orassmail.controller.AlerteController#triggerAlerts()
+2025-04-23T13:44:52.262Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] c.o.o.controller.AlerteController        : Déclenchement manuel des alertes via API REST
+2025-04-23T13:44:52.263Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.AlerteService  : Vérification manuelle des alertes déclenchée
+2025-04-23T13:44:52.263Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.AlerteService  : Début de la vérification des alertes...
+2025-04-23T13:44:53.022Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.AlerteService  : Nombre de victimes trouvées nécessitant une alerte : 3
+2025-04-23T13:44:58.391Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.EmailService   : Email d'alerte envoyé avec succès pour le sinistre 217/2020/100035, victime 1
+2025-04-23T13:45:01.667Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.EmailService   : Email d'alerte envoyé avec succès pour le sinistre 324/2018/100542, victime 1
+2025-04-23T13:45:05.497Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.EmailService   : Email d'alerte envoyé avec succès pour le sinistre 217/2021/100102, victime 1
+2025-04-23T13:45:05.498Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.AlerteService  : Nombre d'alertes envoyées : 3
+2025-04-23T13:45:09.635Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.EmailService   : Email de résumé envoyé avec succès à : k.kompissi@saarvie.ci
+2025-04-23T13:45:09.636Z  INFO 30412 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.AlerteService  : Fin de la vérification des alertes.
+2025-04-23T13:45:09.719Z DEBUG 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-04-23T13:45:09.724Z DEBUG 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=true, alertesEnvoyees=0, timestamp=1745415909637}]
+2025-04-23T13:45:09.785Z DEBUG 30412 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-23T13:45:09.898Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:45:09.900Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:45:09.901Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:45:39.939Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:45:40.015Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:45:40.017Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:46:10.026Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:46:10.030Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:46:10.037Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:46:40.049Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:46:40.052Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:46:40.055Z DEBUG 30412 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:47:01.431Z  INFO 30412 --- [orassmail] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-23T13:47:02.148Z  INFO 30412 --- [orassmail] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-23T13:47:02.335Z  INFO 30412 --- [orassmail] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T13:47:02.513Z  INFO 30412 --- [orassmail] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-23T13:47:02.516Z DEBUG 30412 --- [orassmail] [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before shutdown stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:47:02.560Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@18b3db6e: (connection evicted)
+2025-04-23T13:47:02.620Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@16a6970b: (connection evicted)
+2025-04-23T13:47:02.640Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@18617baf: (connection evicted)
+2025-04-23T13:47:02.659Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1c5efc7b: (connection evicted)
+2025-04-23T13:47:02.682Z DEBUG 30412 --- [orassmail] [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@595c7194: (connection evicted)
+2025-04-23T13:47:02.705Z DEBUG 30412 --- [orassmail] [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2025-04-23T13:47:02.708Z  INFO 30412 --- [orassmail] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-23T13:48:50.591Z  INFO 23540 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : Starting OrassmailApplication using Java 17.0.14 with PID 23540 (E:\Projects\orassmail\target\classes started by ALIKSON.AWOUATSA in E:\Projects\orassmail)
+2025-04-23T13:48:50.594Z DEBUG 23540 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-23T13:48:50.595Z  INFO 23540 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-04-23T13:48:51.649Z  INFO 23540 --- [orassmail] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-23T13:48:51.862Z  INFO 23540 --- [orassmail] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 196 ms. Found 2 JPA repository interfaces.
+2025-04-23T13:48:52.925Z  INFO 23540 --- [orassmail] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-23T13:48:53.004Z  INFO 23540 --- [orassmail] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-23T13:48:53.005Z  INFO 23540 --- [orassmail] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-23T13:48:53.132Z  INFO 23540 --- [orassmail] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-23T13:48:53.132Z  INFO 23540 --- [orassmail] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2474 ms
+2025-04-23T13:48:53.412Z DEBUG 23540 --- [orassmail] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-04-23T13:48:53.443Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@6659c656
+2025-04-23T13:48:53.696Z  INFO 23540 --- [orassmail] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-23T13:48:53.768Z  INFO 23540 --- [orassmail] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-23T13:48:53.796Z  INFO 23540 --- [orassmail] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-23T13:48:54.098Z  INFO 23540 --- [orassmail] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-23T13:48:54.121Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2025-04-23T13:48:54.126Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2025-04-23T13:48:54.126Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2025-04-23T13:48:54.128Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2025-04-23T13:48:54.128Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2025-04-23T13:48:54.128Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery............."SELECT 1 FROM DUAL"
+2025-04-23T13:48:54.129Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............60000
+2025-04-23T13:48:54.129Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2025-04-23T13:48:54.130Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2025-04-23T13:48:54.130Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2025-04-23T13:48:54.130Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2025-04-23T13:48:54.131Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2025-04-23T13:48:54.131Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2025-04-23T13:48:54.132Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2025-04-23T13:48:54.132Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2025-04-23T13:48:54.133Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2025-04-23T13:48:54.133Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2025-04-23T13:48:54.133Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2025-04-23T13:48:54.133Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:oracle:thin:@//192.168.1.4:1521/SAARCIDB
+2025-04-23T13:48:54.134Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................0
+2025-04-23T13:48:54.134Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2025-04-23T13:48:54.134Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2025-04-23T13:48:54.134Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................20
+2025-04-23T13:48:54.134Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2025-04-23T13:48:54.135Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2025-04-23T13:48:54.135Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................5
+2025-04-23T13:48:54.135Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2025-04-23T13:48:54.136Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2025-04-23T13:48:54.136Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2025-04-23T13:48:54.136Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2025-04-23T13:48:54.136Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2025-04-23T13:48:54.136Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2025-04-23T13:48:54.137Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2025-04-23T13:48:54.137Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2025-04-23T13:48:54.137Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : username........................"ORASSSMS"
+2025-04-23T13:48:54.137Z DEBUG 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............30000
+2025-04-23T13:48:54.138Z  INFO 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-23T13:48:54.609Z  INFO 23540 --- [orassmail] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2025-04-23T13:48:54.657Z  INFO 23540 --- [orassmail] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2299f6d7
+2025-04-23T13:48:54.663Z  INFO 23540 --- [orassmail] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-23T13:48:54.768Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=1, active=1, idle=0, waiting=0)
+2025-04-23T13:48:54.784Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=1, active=1, idle=0, waiting=0)
+2025-04-23T13:48:54.794Z  WARN 23540 --- [orassmail] [main] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2025-04-23T13:48:54.819Z  WARN 23540 --- [orassmail] [main] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-23T13:48:54.907Z  INFO 23540 --- [orassmail] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-23T13:48:54.911Z DEBUG 23540 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@266e0aa5
+2025-04-23T13:48:54.953Z DEBUG 23540 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=2, active=0, idle=2, waiting=0)
+2025-04-23T13:48:55.044Z DEBUG 23540 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@28a9f018
+2025-04-23T13:48:55.076Z DEBUG 23540 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=3, active=0, idle=3, waiting=0)
+2025-04-23T13:48:55.193Z DEBUG 23540 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2c9661d5
+2025-04-23T13:48:55.232Z DEBUG 23540 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=4, active=0, idle=4, waiting=0)
+2025-04-23T13:48:55.330Z DEBUG 23540 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6994fa23
+2025-04-23T13:48:55.371Z DEBUG 23540 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:48:55.373Z DEBUG 23540 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Connection not added, stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:48:56.342Z  INFO 23540 --- [orassmail] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-23T13:48:56.348Z  INFO 23540 --- [orassmail] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T13:48:56.875Z  INFO 23540 --- [orassmail] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-23T13:48:57.941Z DEBUG 23540 --- [orassmail] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2025-04-23T13:48:58.443Z DEBUG 23540 --- [orassmail] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-04-23T13:48:58.606Z DEBUG 23540 --- [orassmail] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-23T13:48:58.818Z DEBUG 23540 --- [orassmail] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-23T13:49:00.212Z  INFO 23540 --- [orassmail] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-23T13:49:00.585Z  INFO 23540 --- [orassmail] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-23T13:49:00.689Z  INFO 23540 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : Started OrassmailApplication in 10.536 seconds (process running for 10.872)
+2025-04-23T13:49:24.797Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:49:24.799Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:49:24.800Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:49:31.353Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-23T13:49:31.354Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-23T13:49:31.356Z DEBUG 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-04-23T13:49:31.357Z DEBUG 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-04-23T13:49:31.359Z DEBUG 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-04-23T13:49:31.362Z DEBUG 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6b00587b
+2025-04-23T13:49:31.364Z DEBUG 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@59e7a6d8
+2025-04-23T13:49:31.365Z DEBUG 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-04-23T13:49:31.366Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2025-04-23T13:49:31.418Z DEBUG 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/alertes/trigger", parameters={}
+2025-04-23T13:49:31.432Z DEBUG 23540 --- [orassmail] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.orass.orassmail.controller.AlerteController#triggerAlerts()
+2025-04-23T13:49:31.469Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] c.o.o.controller.AlerteController        : Déclenchement manuel des alertes via API REST
+2025-04-23T13:49:31.470Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] c.orass.orassmail.service.AlerteService  : Vérification manuelle des alertes déclenchée
+2025-04-23T13:49:31.470Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] c.orass.orassmail.service.AlerteService  : Début de la vérification des alertes...
+2025-04-23T13:49:32.514Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] c.orass.orassmail.service.AlerteService  : Nombre de victimes trouvées nécessitant une alerte : 3
+2025-04-23T13:49:38.260Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] c.orass.orassmail.service.EmailService   : Email d'alerte envoyé avec succès pour le sinistre 217/2020/100035, victime 1
+2025-04-23T13:49:41.952Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] c.orass.orassmail.service.EmailService   : Email d'alerte envoyé avec succès pour le sinistre 324/2018/100542, victime 1
+2025-04-23T13:49:45.330Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] c.orass.orassmail.service.EmailService   : Email d'alerte envoyé avec succès pour le sinistre 217/2021/100102, victime 1
+2025-04-23T13:49:45.332Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] c.orass.orassmail.service.AlerteService  : Nombre d'alertes envoyées : 3
+2025-04-23T13:49:48.800Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] c.orass.orassmail.service.EmailService   : Email de résumé envoyé avec succès à : k.kompissi@saarvie.ci
+2025-04-23T13:49:48.801Z  INFO 23540 --- [orassmail] [http-nio-8080-exec-2] c.orass.orassmail.service.AlerteService  : Fin de la vérification des alertes.
+2025-04-23T13:49:48.891Z DEBUG 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-04-23T13:49:48.896Z DEBUG 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=true, alertesEnvoyees=0, timestamp=1745416188802}]
+2025-04-23T13:49:48.991Z DEBUG 23540 --- [orassmail] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-23T13:49:54.811Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:49:54.811Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:49:54.812Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:50:24.829Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:50:24.852Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:50:24.854Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:50:54.857Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:50:54.867Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:50:54.869Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:51:24.879Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:51:24.881Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:51:24.882Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:51:54.895Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:51:54.902Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:51:54.903Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:52:24.919Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:52:24.922Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:52:24.922Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:52:54.938Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:52:54.942Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:52:54.942Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:53:24.948Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:53:24.950Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:53:24.951Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:53:54.968Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:53:54.970Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:53:54.971Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:54:24.983Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:54:24.985Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:54:24.986Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:54:54.990Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:54:54.991Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:54:54.993Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:55:25.001Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:55:25.005Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:55:25.005Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:55:55.009Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:55:55.011Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:55:55.012Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:56:25.029Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:56:25.042Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:56:25.045Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:56:55.056Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:56:55.057Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:56:55.067Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:57:25.075Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:57:25.081Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:57:25.083Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:57:55.089Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:57:55.091Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:57:55.091Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:58:25.103Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:58:25.110Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:58:25.113Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:58:55.131Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:58:55.134Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:58:55.135Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:59:25.139Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:59:25.142Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:59:25.143Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T13:59:55.148Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:59:55.151Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T13:59:55.152Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T14:00:25.195Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:00:25.262Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:00:25.263Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T14:00:52.458Z  INFO 23540 --- [orassmail] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-23T14:00:54.117Z  INFO 23540 --- [orassmail] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-23T14:00:54.973Z  INFO 23540 --- [orassmail] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T14:00:55.274Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:00:55.275Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:00:55.280Z DEBUG 23540 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T14:00:55.658Z  INFO 23540 --- [orassmail] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-23T14:00:55.665Z DEBUG 23540 --- [orassmail] [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before shutdown stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:02:13.951Z  INFO 24772 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : Starting OrassmailApplication using Java 17.0.14 with PID 24772 (E:\Projects\orassmail\target\classes started by ALIKSON.AWOUATSA in E:\Projects\orassmail)
+2025-04-23T14:02:13.954Z DEBUG 24772 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-23T14:02:13.956Z  INFO 24772 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-04-23T14:02:15.066Z  INFO 24772 --- [orassmail] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-23T14:02:15.131Z  INFO 24772 --- [orassmail] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2025-04-23T14:02:15.884Z  INFO 24772 --- [orassmail] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-23T14:02:15.912Z  INFO 24772 --- [orassmail] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-23T14:02:15.912Z  INFO 24772 --- [orassmail] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-23T14:02:15.995Z  INFO 24772 --- [orassmail] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-23T14:02:15.996Z  INFO 24772 --- [orassmail] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1970 ms
+2025-04-23T14:02:16.171Z DEBUG 24772 --- [orassmail] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-04-23T14:02:16.199Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : Driver class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@6659c656
+2025-04-23T14:02:16.349Z  INFO 24772 --- [orassmail] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-23T14:02:16.402Z  INFO 24772 --- [orassmail] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-23T14:02:16.430Z  INFO 24772 --- [orassmail] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-23T14:02:16.689Z  INFO 24772 --- [orassmail] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-23T14:02:16.728Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2025-04-23T14:02:16.734Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2025-04-23T14:02:16.734Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2025-04-23T14:02:16.735Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2025-04-23T14:02:16.735Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2025-04-23T14:02:16.736Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery............."SELECT 1 FROM DUAL"
+2025-04-23T14:02:16.736Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............60000
+2025-04-23T14:02:16.737Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2025-04-23T14:02:16.739Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2025-04-23T14:02:16.739Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2025-04-23T14:02:16.740Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2025-04-23T14:02:16.741Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2025-04-23T14:02:16.742Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2025-04-23T14:02:16.742Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2025-04-23T14:02:16.742Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2025-04-23T14:02:16.742Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2025-04-23T14:02:16.743Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2025-04-23T14:02:16.743Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2025-04-23T14:02:16.743Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:oracle:thin:@//192.168.1.4:1521/SAARCIDB
+2025-04-23T14:02:16.744Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................0
+2025-04-23T14:02:16.744Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2025-04-23T14:02:16.744Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2025-04-23T14:02:16.744Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................20
+2025-04-23T14:02:16.744Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2025-04-23T14:02:16.744Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2025-04-23T14:02:16.746Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................5
+2025-04-23T14:02:16.746Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2025-04-23T14:02:16.746Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2025-04-23T14:02:16.746Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2025-04-23T14:02:16.748Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2025-04-23T14:02:16.749Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2025-04-23T14:02:16.750Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2025-04-23T14:02:16.751Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2025-04-23T14:02:16.751Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2025-04-23T14:02:16.752Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : username........................"ORASSSMS"
+2025-04-23T14:02:16.753Z DEBUG 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............30000
+2025-04-23T14:02:16.753Z  INFO 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-23T14:02:17.439Z  INFO 24772 --- [orassmail] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2025-04-23T14:02:17.537Z  INFO 24772 --- [orassmail] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@611a2d82
+2025-04-23T14:02:17.547Z  INFO 24772 --- [orassmail] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-23T14:02:17.623Z  WARN 24772 --- [orassmail] [main] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2025-04-23T14:02:17.633Z  WARN 24772 --- [orassmail] [main] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-23T14:02:17.651Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=1, active=1, idle=0, waiting=0)
+2025-04-23T14:02:17.654Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=1, active=1, idle=0, waiting=0)
+2025-04-23T14:02:17.740Z  INFO 24772 --- [orassmail] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-23T14:02:17.872Z DEBUG 24772 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@59abf071
+2025-04-23T14:02:17.916Z DEBUG 24772 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=2, active=0, idle=2, waiting=0)
+2025-04-23T14:02:18.006Z DEBUG 24772 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@576c1534
+2025-04-23T14:02:18.038Z DEBUG 24772 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=3, active=0, idle=3, waiting=0)
+2025-04-23T14:02:18.142Z DEBUG 24772 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@53539b01
+2025-04-23T14:02:18.177Z DEBUG 24772 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=4, active=0, idle=4, waiting=0)
+2025-04-23T14:02:18.276Z DEBUG 24772 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@16511f0f
+2025-04-23T14:02:18.315Z DEBUG 24772 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:02:18.316Z DEBUG 24772 --- [orassmail] [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Connection not added, stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:02:18.978Z  INFO 24772 --- [orassmail] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-23T14:02:18.981Z  INFO 24772 --- [orassmail] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T14:02:19.454Z  INFO 24772 --- [orassmail] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-23T14:02:20.782Z DEBUG 24772 --- [orassmail] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2025-04-23T14:02:20.920Z DEBUG 24772 --- [orassmail] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-04-23T14:02:20.962Z DEBUG 24772 --- [orassmail] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-23T14:02:21.019Z DEBUG 24772 --- [orassmail] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-23T14:02:21.734Z  INFO 24772 --- [orassmail] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-23T14:02:21.884Z  INFO 24772 --- [orassmail] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-23T14:02:21.911Z  INFO 24772 --- [orassmail] [main] c.orass.orassmail.OrassmailApplication   : Started OrassmailApplication in 8.481 seconds (process running for 8.784)
+2025-04-23T14:02:47.660Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:02:47.661Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:02:47.661Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T14:03:17.675Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:03:17.676Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:03:17.677Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T14:03:47.679Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:03:47.681Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:03:47.683Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T14:04:17.689Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:04:17.692Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:04:17.692Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T14:04:29.697Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-23T14:04:29.702Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-23T14:04:29.719Z DEBUG 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-04-23T14:04:29.726Z DEBUG 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-04-23T14:04:29.731Z DEBUG 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-04-23T14:04:29.880Z DEBUG 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@154f5d37
+2025-04-23T14:04:29.883Z DEBUG 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5c65001c
+2025-04-23T14:04:29.891Z DEBUG 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-04-23T14:04:29.893Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 185 ms
+2025-04-23T14:04:30.097Z DEBUG 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/alertes/trigger", parameters={}
+2025-04-23T14:04:30.147Z DEBUG 24772 --- [orassmail] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.orass.orassmail.controller.AlerteController#triggerAlerts()
+2025-04-23T14:04:30.224Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] c.o.o.controller.AlerteController        : Déclenchement manuel des alertes via API REST
+2025-04-23T14:04:30.237Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.AlerteService  : Vérification manuelle des alertes déclenchée
+2025-04-23T14:04:30.239Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.AlerteService  : Début de la vérification des alertes...
+2025-04-23T14:04:31.636Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.AlerteService  : Nombre de victimes trouvées nécessitant une alerte : 3
+2025-04-23T14:04:37.533Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.EmailService   : Email d'alerte envoyé avec succès pour le sinistre 217/2020/100035, victime 1
+2025-04-23T14:04:40.947Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.EmailService   : Email d'alerte envoyé avec succès pour le sinistre 324/2018/100542, victime 1
+2025-04-23T14:04:44.749Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.EmailService   : Email d'alerte envoyé avec succès pour le sinistre 217/2021/100102, victime 1
+2025-04-23T14:04:44.752Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.AlerteService  : Nombre d'alertes envoyées : 3
+2025-04-23T14:04:47.693Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:04:47.694Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:04:47.696Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-04-23T14:04:48.191Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.EmailService   : Email de résumé envoyé avec succès à : lakengne@saar-assurances.com
+2025-04-23T14:04:48.192Z  INFO 24772 --- [orassmail] [http-nio-8080-exec-1] c.orass.orassmail.service.AlerteService  : Fin de la vérification des alertes.
+2025-04-23T14:04:48.366Z DEBUG 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-04-23T14:04:48.375Z DEBUG 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=true, alertesEnvoyees=0, timestamp=1745417088195}]
+2025-04-23T14:04:48.497Z DEBUG 24772 --- [orassmail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-04-23T14:05:17.700Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:05:17.703Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-04-23T14:05:17.704Z DEBUG 24772 --- [orassmail] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.

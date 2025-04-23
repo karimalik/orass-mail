@@ -48,7 +48,8 @@ public class EmailService {
             helper.setSubject("Alerte ORASS - Dossier sinistre en attente");
 
             SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-            NumberFormat numberFormat = NumberFormat.getCurrencyInstance(Locale.FRANCE);
+            Locale localeCI = new Locale("fr", "CI");
+            NumberFormat numberFormat = NumberFormat.getCurrencyInstance(localeCI);
 
             String content = "<html>" +
                     "<head>" +
@@ -110,12 +111,11 @@ public class EmailService {
         try {
             MimeMessage mimeMessage = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
-            
+
             helper.setTo(to);
             helper.setSubject("ORASS - Résumé des alertes sinistres du jour");
-            
-            String content = 
-                    "<html>" +
+
+            String content = "<html>" +
                     "<head>" +
                     "    <style>" +
                     "        body { font-family: Arial, sans-serif; }" +
@@ -130,14 +130,15 @@ public class EmailService {
                     "            <h2>Résumé des alertes sinistres du jour</h2>" +
                     "        </div>" +
                     "        <p>Bonjour,</p>" +
-                    "        <p class='summary'>Aujourd'hui, <strong>" + totalAlerts + " alertes</strong> ont été envoyées concernant des dossiers sinistres en attente.</p>" +
+                    "        <p class='summary'>Aujourd'hui, <strong>" + totalAlerts
+                    + " alertes</strong> ont été envoyées concernant des dossiers sinistres en attente.</p>" +
                     "        <h3>Détail par gestionnaire :</h3>" +
                     "        " + detailContent +
                     "        <p>Cordialement,<br>Système d'alertes ORASS</p>" +
                     "    </div>" +
                     "</body>" +
                     "</html>";
-            
+
             helper.setText(content, true);
             mailSender.send(mimeMessage);
             log.info("Email de résumé envoyé avec succès à : {}", to);

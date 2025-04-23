@@ -15,12 +15,12 @@ public interface DetailVictimeRepository extends JpaRepository<DetailVictime, De
 
     @Query("SELECT d FROM DetailVictime d WHERE d.reliquat > 0")
     List<DetailVictime> findSinistresNonRegles();
-    
-    @Query("SELECT d FROM DetailVictime d WHERE d.nbrJour >= :threshold")
-    List<DetailVictime> findVictimesRequiringAlert(@Param("threshold") Integer
-    threshold);
+
+    @Query("SELECT d FROM DetailVictime d WHERE d.nbrJour >= :minThreshold AND d.nbrJour <= :maxThreshold")
+    List<DetailVictime> findVictimesRequiringAlert(
+            @Param("minThreshold") Integer minThreshold,
+            @Param("maxThreshold") Integer maxThreshold);
 
     @Query("SELECT DISTINCT d.creePar, COUNT(d) FROM DetailVictime d WHERE d.nbrJour >= :threshold GROUP BY d.creePar")
-    List<Object[]> countAlertsByGestionnaire(@Param("threshold") Integer
-    threshold);
+    List<Object[]> countAlertsByGestionnaire(@Param("threshold") Integer threshold);
 }

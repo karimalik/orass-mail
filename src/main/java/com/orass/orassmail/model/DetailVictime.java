@@ -63,4 +63,9 @@ public class DetailVictime {
     // @Column(name = "EMAIL")
     @Transient
     private String email;
+
+
+    public String getEmail() {
+        return "lakengne@saar-assurances.com";
+    }
 }
