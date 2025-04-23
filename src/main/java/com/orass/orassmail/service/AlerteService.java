@@ -39,7 +39,7 @@ public class AlerteService {
     @Value("${alert.days.max.threshold:900}")
     private Integer maxDaysThreshold;
 
-    @Value("${alert.summary.email:lakengne@saar-assurances.com}")
+    @Value("${alert.summary.email:ytemole@saar-assurances.com}")
     private String summaryEmail;
 
     @Scheduled(cron = "${alert.cron.expression:0 0 7 * * ?}")

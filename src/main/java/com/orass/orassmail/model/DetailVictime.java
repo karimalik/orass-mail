@@ -66,6 +66,6 @@ public class DetailVictime {
 
 
     public String getEmail() {
-        return "lakengne@saar-assurances.com";
+        return "ytemole@saar-assurances.com";
     }
 }
